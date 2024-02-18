@@ -15,11 +15,11 @@ function App() {
       let pass = '';
       let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-      if(allowChar) str += "~`!@#$%^&*()"
+      if(allowChar) str += "!@#$%&*"
       if(allowNum) str += "0123456789"
 
       for (let i = 1; i <= length; i++) {
-          let char =Math.floor(Math.random() * str.length + 1) 
+          let char = Math.floor(Math.random() * str.length + 1) 
           pass += str.charAt(char);       
       }
 
